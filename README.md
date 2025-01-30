@@ -1,9 +1,16 @@
 # Where SHOULD You Live? - Optimizing Commute time and personal life Circles 🏙️🚉
 
-A web interface to visualize optimal residential areas based on commute times to your workplace/university and frequent destinations. Uses transit data and rent statistics to recommend locations balancing convenience and affordability.
+  A friendly interface to visualize optimal residential areas based on commute times to your workplace/university and frequent destinations. Uses realtime transit data and rent statistics to recommend locations balancing convenience and affordability.
 
 <img width="1316" alt="image" src="https://github.com/user-attachments/assets/e82f4c66-670c-449e-9f3e-b74f4e23b309" />
 
+
+- litte note from me: i made this is for expats who don't familiar with Japan's geo-rent-transit relationship like myself to quickly familiarize themselves to local market conditions.
+i've never been to Japan before.So when i go to housing site for first time i see all these location search options is just confusing because i can't picture them like native does.
+
+Platforms like Suumo they don't offer high-level view i need to understand these relations, which is understandable since is key intel they need to stay informed in business
+
+that's why i made this, to help expats make informed decisions
 
 
 ## Features ✨
