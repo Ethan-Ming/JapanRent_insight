@@ -2,6 +2,9 @@
 
 A web interface to visualize optimal residential areas based on commute times to your workplace/university and frequent destinations. Uses transit data and rent statistics to recommend locations balancing convenience and affordability.
 
+<img width="1327" alt="image" src="https://github.com/user-attachments/assets/9c5e0d7a-6369-4edf-8476-8c03b76c89ac" />
+
+
 ## Features ✨
 
 - **Dual Commute Visualization**: Input two key locations (e.g., workplace + hangout spot) and max commute times.
