@@ -10,7 +10,7 @@ i've never been to Japan before.So when i go to housing site for first time i se
 
 Platforms like Suumo they don't offer high-level view i need to understand these relations, which is understandable since is key intel they need to stay informed in business
 
-that's why i made this, to help expats make informed decisions
+that's why i made this, to help expats make *informed decisions*
 
 
 ## Features ✨
