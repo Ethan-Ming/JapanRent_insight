@@ -55,7 +55,7 @@ A web interface to visualize optimal residential areas based on commute times to
 
     Larger IQR = greater rent price variability
 
-Limitations ⚠️
+### Limitations ⚠️
 
 Geographic Scope: Currently 50% of the rent info are from Tokyo
 
@@ -72,10 +72,10 @@ Browser Requirements: ChromeDriver must match installed Chrome version
 Time Sensitivity: Transit times assume weekday 8AM JST departures
 
 
-Data Sources 📚
+### Data Sources 📚
 Transit Data: Google Maps (via Selenium scraping)
 
-Rent Prices: 
+Rent Prices: [Real Estate Japan](https://realestate.co.jp/en/rent).
 
 Station Coordinates: OpenStreetMap.org, Google Maps
 
