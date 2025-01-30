@@ -61,15 +61,15 @@ A web interface to visualize optimal residential areas based on commute times to
 
 - Data Dependencies:
 
-- rent info cutoff at 2025-01-25, for newer knowleage requires perpare a newer tokyo_rent.db
+    - rent info cutoff at 2025-01-25, for newer knowleage requires perpare a newer tokyo_rent.db
 
-- Google Maps API dosen't support japan, this code use scraping which may break with UI changes
+    - Google Maps API dosen't support japan, this code use scraping which may break with UI changes
 
-- Performance: Initial runs may take 15-30 minutes due to transit time scraping
+    - Performance: Initial runs may take 15-30 minutes due to transit time scraping
 
-- Browser Requirements: ChromeDriver must match installed Chrome version
+    - Browser Requirements: ChromeDriver must match installed Chrome version
 
-- Time Sensitivity: Transit times assume weekday 8AM JST departures
+    - Time Sensitivity: Transit times assume weekday 8AM JST departures
 
 
 ### Data Sources 📚
