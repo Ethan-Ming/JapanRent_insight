@@ -9,6 +9,7 @@
 
 ## Features ✨
 
+- **Cost Saving**: Immediately see where gives you best bang for the bucks
 - **Dual Commute Visualization**: Input two key locations (e.g., workplace + hangout spot) and max commute times.
 - **Living Circles Map**: Interactive Folium map showing:
   - Commute range circles from both locations
