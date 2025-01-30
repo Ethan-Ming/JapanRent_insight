@@ -1,4 +1,4 @@
-# Where SHOULD You Live? - Commute-Optimized Living Circles 🏙️🚉
+# Where SHOULD You Live? - Optimizing Commute time and personal life Circles 🏙️🚉
 
 A web interface to visualize optimal residential areas based on commute times to your workplace/university and frequent destinations. Uses transit data and rent statistics to recommend locations balancing convenience and affordability.
 
