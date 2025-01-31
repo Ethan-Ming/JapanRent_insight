@@ -20,7 +20,7 @@
 - **Prefecture Filtering**: Narrow search to specific administrative regions for faster results.
 
 ## Live Demo 🌐
-- Check out the live demo [here](https://where-should-you-live.streamlit.app/).
+- **[Check out the live demo here](https://japanrentinsight-mrdqsz8n4rd8sti5ffouxz.streamlit.app/)**.(only has shibuya,akihabara,shinjuku for preview purposes, for acutaul usage, consdier insatll locally)
 
 ## Installation ⚙️
 
