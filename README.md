@@ -19,6 +19,9 @@
 - **Caching System**: SQLite database caches transit times to speed up repeated queries.
 - **Prefecture Filtering**: Narrow search to specific administrative regions for faster results.
 
+## Live Demo 🌐
+- Check out the live demo [here](https://where-should-you-live.streamlit.app/).
+
 ## Installation ⚙️
 
 ### Prerequisites
@@ -55,7 +58,7 @@
 
 3. Interpret results:
 
-    Yellow overlap zones on map indicate optimal areas
+    Purple overlap zones on map indicate optimal areas
 
     Station list shows rent cost statistics
 
@@ -75,7 +78,7 @@
 
     - Browser Requirements: ChromeDriver must match installed Chrome version
 
-    - Time Sensitivity: Transit times assume weekday 8AM JST departures
+    - Time Sensitivity: Transit times use your current timezone in respect of JST time
 
 
 ### Data Sources 📚

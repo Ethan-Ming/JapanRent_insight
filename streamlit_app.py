@@ -196,10 +196,10 @@ with st.form("input_form"):
     
     col1, col2 = st.columns(2)
     with col1:
-        company_station = st.selectbox("Company/University Station", stations)
+        company_station = st.selectbox("Nearest Station to Company/University", stations)
         company_time = st.number_input("Max commute to company (min)", 30)
     with col2:
-        hangout_station = st.selectbox("(Optional) Hangout/Part-time Station", stations)
+        hangout_station = st.selectbox("(Optional) Nearest Station to Hangout/Part-time ", stations)
         hangout_time = st.number_input("Max commute to 2nd location (min)", 30)
     
     selected_prefectures = st.multiselect(
@@ -245,26 +245,39 @@ if submitted:
                     q1 = sorted_costs[int(n*0.25)]
                     q3 = sorted_costs[int(n*0.75)]
                     iqr = q3 - q1
+
+                    # Calculate minimum and recommended wages
+                    min_wage = 40 * median  # 20 * median * 2
+                    rec_wage = 115 * median  # 23 * median * 5
+
                     rent_data.append({
                         'station': station,
-                        'median': median,
-                        'iqr': iqr
+                        'Rent Median(¥/M²)': median,
+                        'IQR(rent diversity)': iqr,
+                        'Minimum Wage to live here': min_wage,
+                        'Recommended Wage to live here': rec_wage
                     })
             conn.close()
             
             # Sort by median rent in ascending order
-            rent_data.sort(key=lambda x: x['median'])
+            rent_data.sort(key=lambda x: x['Rent Median(¥/M²)'])
             
             # Display the map
-            st.subheader("Recommended Living Areas")
+            st.subheader("These places are ideal for your lifestyle")
             st.components.v1.html(map_html, height=600)
             
             # Display the table
-            st.subheader("Reachable Stations by Rent Median")
+            st.subheader("Recommand living loaction for you Ranked by CP コスパ")
             if rent_data:
-                # Convert to DataFrame for better display
                 import pandas as pd
                 df = pd.DataFrame(rent_data)
+                
+                # Format numeric columns as currency strings
+                df['Rent Median(¥/M²)'] = df['Rent Median(¥/M²)'].apply(lambda x: f'¥{x:,.2f}')
+                df['IQR(rent diversity)'] = df['IQR(rent diversity)'].apply(lambda x: f'¥{x:,.2f}')
+                df['Minimum Wage to live here'] = df['Minimum Wage to live here'].apply(lambda x: f'¥{x:,.2f}')
+                df['Recommended Wage to live here'] = df['Recommended Wage to live here'].apply(lambda x: f'¥{x:,.2f}')
+                
                 st.dataframe(df, use_container_width=True)
             else:
                 st.info("No rent data available for the recommended stations.")
