@@ -14,7 +14,7 @@
 - **Living Circles Map**: Interactive Folium map showing:
   - Commute range circles from both locations
   - Overlap zones (ideal living areas)
-  - Stations with median rent cost/square meter
+  - Key housing statistics of this stations
   - ![Screen Shot 2025-01-31 at 11 26 14 Large](https://github.com/user-attachments/assets/8d9cdd7e-0242-418d-bed5-d4932c5b7c2e)
 
 - **Rent Statistics**: Median, quartiles, and IQR for rent prices in overlapping zones.
