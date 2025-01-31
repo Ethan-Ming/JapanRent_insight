@@ -3,13 +3,14 @@
   A friendly interface to visualize optimal residential areas based on commute times to your workplace/university and frequent destinations. Uses realtime transit data and rent statistics to recommend locations balancing convenience and affordability.
 
 <img width="1316" alt="image" src="https://github.com/user-attachments/assets/e82f4c66-670c-449e-9f3e-b74f4e23b309" />
-
+<img width="1240" alt="Screen Shot 2025-01-31 at 11 26 14" src="https://github.com/user-attachments/assets/af65458f-f547-44df-a17a-98b96bbf5a43" />
+<img width="1262" alt="Screen Shot 2025-01-31 at 11 26 25" src="https://github.com/user-attachments/assets/ce292cab-863d-4d70-bb9a-449ae6d243be" />
 
 
 
 ## Features ✨
 
-- **Cost Saving**: Immediately see where gives you best bang for the bucks
+- **Cost Saving**: Immediately see where gives you best bang for the bucks !
 - **Dual Commute Visualization**: Input two key locations (e.g., workplace + hangout spot) and max commute times.
 - **Living Circles Map**: Interactive Folium map showing:
   - Commute range circles from both locations
