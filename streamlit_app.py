@@ -1,15 +1,15 @@
-# streamlit_app.py
+# streamlit_app.py for deployment
 import streamlit as st
 import get_transit_time as gt
 from direction_API_demo import format_station_name, get_station_options
 import overlay_plotter as op
 import sqlite3
 import folium
-import webui as wbi
 from streamlit_folium import st_folium
-from collections import defaultdict
+from collections import defaultdict 
+from webui import process_commute_circles as webui_process_commute_circles
 
-# Add at the top of your file:
+
 st.set_page_config(
     page_title="Where SHOULD you live?",
     layout="wide",
@@ -183,8 +183,6 @@ def process_commute_circles(company_station, hangout_station, company_time, hang
     except Exception as e:
         st.error(f"Error generating map: {str(e)}")
         return folium.Map(location=[35.6895, 139.6917], zoom_start=10)
-# Add this import at the top
-from webui import process_commute_circles as webui_process_commute_circles
 
 # Streamlit UI
 st.title("Where SHOULD you live?")
@@ -247,9 +245,8 @@ if submitted:
                     iqr = q3 - q1
 
                     # Calculate minimum and recommended wages
-                    min_wage = 40 * median  # 20 * median * 2
-                    rec_wage = 115 * median  # 23 * median * 5
-
+                    min_wage = 40 * median  #a 20 square room  * median square price * 2 (50% of BHR)
+                    rec_wage = 115 * median  #a 23 square meter room * median * 5 (20% of BHR)
                     rent_data.append({
                         'station': station,
                         'Rent Median(¥/M²)': median,

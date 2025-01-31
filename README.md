@@ -22,7 +22,7 @@
 - **Prefecture Filtering**: Narrow search to specific administrative regions for faster results.
 
 ## Live Demo 🌐
-- **[Check out the live demo here](https://japanrentinsight-mrdqsz8n4rd8sti5ffouxz.streamlit.app/)**.(only has shibuya,akihabara,shinjuku,Hachioji for preview purposes, for acutaul usage, consider insatll locally)
+- **[Check out the live demo here](https://japanrentinsight-mrdqsz8n4rd8sti5ffouxz.streamlit.app/)**.(only has shibuya,akihabara,shinjuku,Hachioji for preview purposes! for acutaul usage, consider insatll locally)
 
 ## Installation ⚙️
 
@@ -39,8 +39,8 @@
 2. Install dependencies:
     ```bash
     pip install -r requirements.txt
-3. Set up databases (optional):
-     Place tokyo_rent.db in /Dataset (you can perpere this using this tool https://github.com/Ethan-Ming/TokyoRentingBirdview/blob/main/Run_this/rent_scapping.py )
+3. (Optional) update databases:
+     Place latest tokyo_rent.db in /Dataset (you can perpere this using this tool https://github.com/Ethan-Ming/TokyoRentingBirdview/blob/main/Run_this/rent_scapping.py )
      Initial DB will be created automatically
 
 
