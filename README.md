@@ -2,7 +2,7 @@
 
   A friendly interface to visualize optimal residential areas based on commute times to your workplace/university and frequent destinations. Uses realtime transit data and rent statistics to recommend locations balancing convenience and affordability.
 
-<img width="1316" alt="image" src="https://github.com/user-attachments/assets/e82f4c66-670c-449e-9f3e-b74f4e23b309" />
+![Screen Shot 2025-01-30 at 18 03 38](https://github.com/user-attachments/assets/03a409d0-5e62-4d2d-8347-45b93039636c)
 
 
 
@@ -15,7 +15,8 @@
   - Commute range circles from both locations
   - Overlap zones (ideal living areas)
   - Stations with median rent cost/square meter
-  -  <img width="1240" alt="Screen Shot 2025-01-31 at 11 26 14" src="https://github.com/user-attachments/assets/af65458f-f547-44df-a17a-98b96bbf5a43" />
+  - ![Screen Shot 2025-01-31 at 11 26 14 Large](https://github.com/user-attachments/assets/8d9cdd7e-0242-418d-bed5-d4932c5b7c2e)
+
 - **Rent Statistics**: Median, quartiles, and IQR for rent prices in overlapping zones.
 - **Caching System**: SQLite database caches transit times to speed up repeated queries.
 - **Prefecture Filtering**: Narrow search to specific administrative regions for faster results.
